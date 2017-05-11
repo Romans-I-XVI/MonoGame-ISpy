@@ -6,6 +6,7 @@ namespace ISpy
 	{
 		public Player()
 		{
+			addComponent(new CircleCollider(1));
 		}
 
 		public override void update()
@@ -24,8 +25,20 @@ namespace ISpy
 				{
 					position = touch.scaledPosition();
 					Android.Util.Log.Info("Player", "ID: " + touch.Id.ToString() + "Position: " + position.X.ToString() + " , " + position.Y.ToString());
+					ProcessCollision();
 				}
 			}
+		}
+
+		private void ProcessCollision()
+		{
+			var collider = getComponent<Collider>();
+			CollisionResult collisionResult = new CollisionResult();
+			if (collider.collidesWithAny(out collisionResult))
+			{
+				Android.Util.Log.Info("Player.ProcessCollision", collisionResult.collider.entity.GetType().ToString());
+			}
+
 		}
 	}
 }

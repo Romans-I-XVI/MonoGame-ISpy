@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Xna.Framework;
 using Nez;
 namespace ISpy
 {
@@ -8,6 +9,7 @@ namespace ISpy
 		{
             addRenderer(new DefaultRenderer());
 			addEntity(new Player());
+			addEntity(new SpyableObject(new Rectangle(GameRoot.MinX, GameRoot.MinY, 100, 100)));
 		}
 	}
 }

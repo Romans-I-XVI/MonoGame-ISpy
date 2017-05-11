@@ -5,10 +5,11 @@ namespace ISpy
 {
 	public class SpyableObject : Entity
 	{
-		public SpyableObject(int x, int y, int width, int height)
+		
+		public SpyableObject(Rectangle rectangle)
 		{
-			position = new Vector2(x, y);
-			addComponent(new BoxCollider(width, height));
+			position = new Vector2(rectangle.Center.X, rectangle.Center.Y);
+			addComponent(new BoxCollider(rectangle.Width, rectangle.Height));
 		}
 	}
 }

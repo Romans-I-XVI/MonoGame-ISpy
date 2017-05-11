@@ -20,6 +20,7 @@ namespace ISpy
 			   MainLauncher = true,
 			   Icon = "@drawable/icon",
 			   Theme = "@style/Theme.Splash",
+	           ScreenOrientation = ScreenOrientation.Landscape,
 			   AlwaysRetainTaskState = true,
 			   LaunchMode = LaunchMode.SingleInstance,
 			   ConfigurationChanges = ConfigChanges.Orientation |
