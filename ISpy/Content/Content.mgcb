@@ -1,0 +1,16 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:Android
+/config:
+/profile:HiDef
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\..\Nez\Nez.PipelineImporter\bin\Release\Nez.PipelineImporter.dll
+
+#---------------------------------- Content ---------------------------------#
+
