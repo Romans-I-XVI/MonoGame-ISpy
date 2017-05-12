@@ -28,6 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +65,7 @@
     <Compile Include="Structs\LevelData.cs" />
     <Compile Include="Levels.cs" />
     <Compile Include="Entities\ISpyPicture.cs" />
+    <Compile Include="Entities\Controls\SpyableObjectControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -91,6 +93,7 @@
     <Folder Include="Components\" />
     <Folder Include="Structs\" />
     <Folder Include="Levels\" />
+    <Folder Include="Entities\Controls\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Nez\Nez.Portable\Nez.csproj">

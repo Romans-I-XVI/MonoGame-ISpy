@@ -23,5 +23,18 @@ namespace ISpy
 				return new LevelData(image_path, data);
 			}
 		}
+		public static LevelData Kitchen
+		{
+			get
+			{
+				var image_path = Content.Pictures.kitchen;
+				var data = new List<SpyableObjectData>
+						{
+							new SpyableObjectData(new Rectangle(205, 528, 94, 120), "Monitor", Content.Sounds.Kitchen.a_dog)
+						};
+
+				return new LevelData(image_path, data);
+			}
+		}
 	}
 }

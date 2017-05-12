@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Nez;
 namespace ISpy
@@ -12,10 +13,15 @@ namespace ISpy
 
 			addEntity(new Player());
 			addEntity(new ISpyPicture(level_data.ImagePath));
+
+			var spyable_object_list = new List<SpyableObject>();
 			foreach (var spyable_data in level_data.Data)
 			{
-				addEntity(new SpyableObject(spyable_data));
+				var new_spyable_object = new SpyableObject(spyable_data);
+				addEntity(new_spyable_object);
+				spyable_object_list.Add(new_spyable_object);
 			}
+			addEntity(new SpyableObjectControl(spyable_object_list));
 		}
 	}
 }

@@ -22,7 +22,8 @@ namespace ISpy
 		{
 			base.onAddedToScene();
 			Image = scene.content.Load<Texture2D>(ImagePath);
-			addComponent(new Sprite(Image));
+			var image = addComponent(new Sprite(Image));
+			image.setRenderLayer(0);
 		}
 	}
 }
