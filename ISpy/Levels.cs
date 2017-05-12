@@ -29,9 +29,16 @@ namespace ISpy
 			{
 				var image_path = Content.Pictures.kitchen;
 				var data = new List<SpyableObjectData>
-						{
-							new SpyableObjectData(new Rectangle(205, 528, 94, 120), "Monitor", Content.Sounds.Kitchen.a_dog)
-						};
+				{
+					new SpyableObjectData(new Rectangle(205, 528, 94, 120), "Monitor", Content.Sounds.Kitchen.a_dog),
+					new SpyableObjectData(new List<Rectangle>()
+					{
+						new Rectangle(815, 5, 74, 80),
+						new Rectangle(783, 40, 32, 30),
+						new Rectangle(889, 39, 24,28)
+					},
+					"Airplane", Content.Sounds.Kitchen.a_dog)
+				};
 
 				return new LevelData(image_path, data);
 			}

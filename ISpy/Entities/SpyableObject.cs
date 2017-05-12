@@ -16,8 +16,11 @@ namespace ISpy
 			_data = data;
 			Found = false;
 			soundEffect = null;
-			position = new Vector2(_data.Rectangle.Center.X, _data.Rectangle.Center.Y);
-			addComponent(new BoxCollider(_data.Rectangle.Width, _data.Rectangle.Height));
+			position = new Vector2(0, 0);
+			foreach (var rectangle in _data.Rectangles)
+			{
+				addComponent(new BoxCollider(rectangle));
+			}
 		}
 
 		public override void onAddedToScene()
