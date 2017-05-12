@@ -57,12 +57,20 @@
     <Compile Include="Scenes\ScenePlay.cs" />
     <Compile Include="Entities\SpyableObject.cs" />
     <Compile Include="Entities\Player.cs" />
+    <Compile Include="Structs\SpyableObjectData.cs" />
+    <Compile Include="ContentPathGenerator.cs">
+      <DependentUpon>ContentPathGenerator.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Structs\LevelData.cs" />
+    <Compile Include="Levels.cs" />
+    <Compile Include="Entities\ISpyPicture.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="ContentPathGenerator.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ContentPathGenerator.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +89,8 @@
     <Folder Include="Scenes\" />
     <Folder Include="Entities\" />
     <Folder Include="Components\" />
+    <Folder Include="Structs\" />
+    <Folder Include="Levels\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Nez\Nez.Portable\Nez.csproj">

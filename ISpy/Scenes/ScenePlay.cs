@@ -5,11 +5,17 @@ namespace ISpy
 {
 	public class ScenePlay : Scene
 	{
-		public ScenePlay()
+		public ScenePlay(LevelData level_data)
 		{
             addRenderer(new DefaultRenderer());
+			Core.scene = this;
+
 			addEntity(new Player());
-			addEntity(new SpyableObject(new Rectangle(GameRoot.MinX, GameRoot.MinY, 100, 100)));
+			addEntity(new ISpyPicture(level_data.ImagePath));
+			foreach (var spyable_data in level_data.Data)
+			{
+				addEntity(new SpyableObject(spyable_data));
+			}
 		}
 	}
 }

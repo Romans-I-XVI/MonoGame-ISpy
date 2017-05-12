@@ -12,10 +12,10 @@ namespace ISpy
 	/// </summary>
 	public class GameRoot : Core
 	{
-		const int WIDTH = 1280;
-		const int HEIGHT = 720;
-		const int HORIZONTALBLEED = WIDTH - (int)(WIDTH * 0.8f);
-		const int VERTICALBLEED = HEIGHT - (int)(HEIGHT * 0.8f);
+		public const int WIDTH = 1280;
+		public const int HEIGHT = 720;
+		public const int HORIZONTALBLEED = WIDTH - (int)(WIDTH * 0.8f);
+		public const int VERTICALBLEED = HEIGHT - (int)(HEIGHT * 0.8f);
 		public static int MinX { get { return HORIZONTALBLEED / 2; } }
 		public static int MinY { get { return VERTICALBLEED / 2; } }
 		public static int MaxX { get { return WIDTH - MinX; } }
@@ -31,8 +31,7 @@ namespace ISpy
 		{
 			base.Initialize();
 			Input.touch.enableTouchSupport();
-			var scene_play = new ScenePlay();
-			Core.scene = scene_play;
+			new ScenePlay(Levels.LivingRoom);
 		}
 
 	}

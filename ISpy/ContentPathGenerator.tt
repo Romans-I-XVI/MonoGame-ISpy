@@ -7,7 +7,7 @@
 <#@ import namespace="System.Globalization" #>
 <#@ import namespace="System.Text.RegularExpressions" #>
 
-<# var sourceFolders = new string[] { "Content/bin/DesktopGL", "Content" }; #>
+<# var sourceFolders = new string[] { "Content/bin/Android", "Content" }; #>
 
 
 namespace Nez
