@@ -68,6 +68,8 @@
     <Compile Include="Entities\Controls\SpyableObjectControl.cs" />
     <Compile Include="Entities\Helpers\SoundQueueProcessor.cs" />
     <Compile Include="Utilities\GameTimeSpan.cs" />
+    <Compile Include="Entities\Buttons\ButtonPlayMessage.cs" />
+    <Compile Include="Interfaces\IClickable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -98,6 +100,8 @@
     <Folder Include="Entities\Controls\" />
     <Folder Include="Utilities\" />
     <Folder Include="Entities\Helpers\" />
+    <Folder Include="Entities\Buttons\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Nez\Nez.Portable\Nez.csproj">

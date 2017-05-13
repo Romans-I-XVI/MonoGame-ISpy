@@ -10,6 +10,7 @@ namespace ISpy
 		private static readonly GameTimeSpan _timer = new GameTimeSpan();
 		private static List<SoundQueueItem> _sound_list = new List<SoundQueueItem>();
 		private static bool _is_sound_playing = false;
+		public static bool isPlaying { get { return _is_sound_playing; } }
 
 		public SoundQueueProcessor()
 		{
@@ -22,6 +23,7 @@ namespace ISpy
 
 		public static void Process()
 		{
+			process_first_sound:
 			if (_sound_list.Count > 0)
 			{
 				if (!_is_sound_playing)
@@ -38,6 +40,7 @@ namespace ISpy
 						if (_sound_list[0].ExecAfterPlaying != null)
 							_sound_list[0].ExecAfterPlaying();
 						_sound_list.RemoveAt(0);
+						goto process_first_sound;
 					}
 				}
 			}

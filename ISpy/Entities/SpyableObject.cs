@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Audio;
 using Nez;
 namespace ISpy
 {
-	public class SpyableObject : Entity
+	public class SpyableObject : Entity, IClickable
 	{
 		private SpyableObjectData _data;
 		public string Text { get { return _data.Text; } }

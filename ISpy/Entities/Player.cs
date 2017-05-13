@@ -37,9 +37,9 @@ namespace ISpy
 			if (collider.collidesWithAny(out collisionResult))
 			{
 				var other_entity = collisionResult.collider.entity;
-				if (other_entity is SpyableObject)
+				if (other_entity is IClickable)
 				{
-					((SpyableObject)other_entity).onClick();
+					((IClickable)other_entity).onClick();
 				}
 
 				Android.Util.Log.Info("Player.ProcessCollision", collisionResult.collider.entity.GetType().ToString());

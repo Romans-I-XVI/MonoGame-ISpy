@@ -23,6 +23,7 @@ namespace Nez
 				public const string a_dog = @"Sounds\Kitchen\a_dog";
 			}
 
+			public const string iSpy = @"Sounds\ISpy";
 			public const string yay = @"Sounds\yay";
 		}
 
