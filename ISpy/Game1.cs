@@ -37,6 +37,12 @@ namespace ISpy
 			new ScenePlay(Levels.Kitchen);
 		}
 
+		protected override void Update(GameTime gameTime)
+		{
+			base.Update(gameTime);
+			SoundQueueProcessor.Process();
+		}
+
 	}
 }
 

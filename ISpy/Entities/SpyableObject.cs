@@ -37,7 +37,7 @@ namespace ISpy
 				Found = true;
 				if (soundEffect != null)
 				{
-					soundEffect.Play();
+					SoundQueueProcessor.Add(soundEffect);
 				}
 			}
 

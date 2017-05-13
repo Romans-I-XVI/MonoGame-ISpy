@@ -66,6 +66,8 @@
     <Compile Include="Levels.cs" />
     <Compile Include="Entities\ISpyPicture.cs" />
     <Compile Include="Entities\Controls\SpyableObjectControl.cs" />
+    <Compile Include="Entities\Helpers\SoundQueueProcessor.cs" />
+    <Compile Include="Utilities\GameTimeSpan.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -94,6 +96,8 @@
     <Folder Include="Structs\" />
     <Folder Include="Levels\" />
     <Folder Include="Entities\Controls\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Entities\Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Nez\Nez.Portable\Nez.csproj">
