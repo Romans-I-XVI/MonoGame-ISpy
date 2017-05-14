@@ -25,7 +25,7 @@ namespace ISpy
 		public override void onAddedToScene()
 		{
 			base.onAddedToScene();
-			ISpyIntroSound = scene.content.Load<SoundEffect>("Sounds/ISpy");
+			ISpyIntroSound = scene.content.Load<SoundEffect>(Content.Sounds.iSpy);
 			scene.addEntity(new ButtonPlayMessage(this, true));
 		}
 	}

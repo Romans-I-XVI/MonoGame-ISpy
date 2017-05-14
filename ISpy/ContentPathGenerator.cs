@@ -27,6 +27,11 @@ namespace Nez
 			public const string yay = @"Sounds\yay";
 		}
 
+		public static class Sprites
+		{
+			public const string ispy_message = @"Sprites\ispy_message";
+		}
+
 
     }
 }
