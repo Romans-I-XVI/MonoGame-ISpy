@@ -75,3 +75,87 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/ispy_message.png
 
+#begin Sounds/Kitchen/a_airplane.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_airplane.wav
+
+#begin Sounds/Kitchen/a_apple.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_apple.wav
+
+#begin Sounds/Kitchen/a_blue_plate.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_blue_plate.wav
+
+#begin Sounds/Kitchen/a_cookie.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_cookie.wav
+
+#begin Sounds/Kitchen/a_elephant.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_elephant.wav
+
+#begin Sounds/Kitchen/a_faris_wheel.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_faris_wheel.wav
+
+#begin Sounds/Kitchen/a_horsie.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_horsie.wav
+
+#begin Sounds/Kitchen/a_muffin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_muffin.wav
+
+#begin Sounds/Kitchen/a_pink_duck.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_pink_duck.wav
+
+#begin Sounds/Kitchen/a_tractor.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/a_tractor.wav
+
+#begin Sounds/Kitchen/m_for_my_mom.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/m_for_my_mom.wav
+
+#begin Sounds/Kitchen/mario.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/mario.wav
+
+#begin Sounds/Kitchen/two_tacos.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Kitchen/two_tacos.wav
+
+#begin Sounds/YouWin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/YouWin.wav
+
